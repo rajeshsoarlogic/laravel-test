@@ -16,6 +16,8 @@
         @php
         echo "<pre>";print_r($_REQUEST);
         @endphp
-        <p>Hi</p>
+        <p>Hi {{$dataLogin['user']->name}},</p>
+        <p>Your login link is </p>
+        <p><a href="{{$dataLogin['loginLink']}}">Login here</a></p>
     </body>
 </html>
